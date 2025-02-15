@@ -88,13 +88,26 @@ body {
 
 #game { /* Lo que hace cambiar de vista una vez iniciado */
     display: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#game h2 {
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .button {
-    width: 150px;
-    height: 150px;
-    border-radius: 5px;
-    border: solid #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid #000;
     cursor: pointer;
     display: inline-block;
 }
@@ -104,11 +117,12 @@ body {
     grid-gap: 5px;
     grid-template-columns: auto auto;
     transform: rotate(45deg);
+    margin-bottom: 20px;
 }
 
 .button.active {
     filter: brightness(125%);
-    opacity: 0.7;
+    opacity: 5;
 }
 
 .red { background-color: red; }
@@ -119,12 +133,28 @@ body {
 #score {
     margin-top: 20px;
     font-size: 24px;
+    color: #333;
+}
+
+#resetButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#resetButton:hover {
+    background-color: #d32f2f;
 }
 
 @media (max-width: 600px) { /* Estilos para pantallas pequeñas */
     .button {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 }
 

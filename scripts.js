@@ -64,8 +64,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function playSound(color) {
-        const audio = new Audio(`sounds/${color}.mp3`);
-        audio.play();
+        let audio;
+        switch (color) {
+            case 'red':
+                audio = new Audio('sounds/Rojo.mp3');
+                break;
+            case 'blue':
+                audio = new Audio('sounds/Azul.mp3');
+                break;
+            case 'green':
+                audio = new Audio('sounds/Verde.mp3');
+                break;
+            case 'yellow':
+                audio = new Audio('sounds/Amarillo.mp3');
+                break;
+        }
+        if (audio) {
+            audio.play().catch(error => console.error('Error al reproducir el sonido:', error));
+        }
     }
 
     function handleButtonClick(color) {
