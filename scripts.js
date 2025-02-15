@@ -67,16 +67,16 @@ document.addEventListener('DOMContentLoaded', () => {
         let audio;
         switch (color) {
             case 'red':
-                audio = new Audio('Sonidos/Rojo.mp3');
+                audio = new Audio('Rojo.mp3');
                 break;
             case 'blue':
-                audio = new Audio('Sonidos/Azul.mp3');
+                audio = new Audio('Azul.mp3');
                 break;
             case 'green':
-                audio = new Audio('Sonidos/Verde.mp3');
+                audio = new Audio('Verde.mp3');
                 break;
             case 'yellow':
-                audio = new Audio('Sonidos/Amarillo.mp3');
+                audio = new Audio('Amarillo.mp3');
                 break;
         }
         if (audio) {
