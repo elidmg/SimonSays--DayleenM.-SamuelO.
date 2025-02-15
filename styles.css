@@ -121,8 +121,8 @@ body {
 }
 
 .button.active {
-    filter: brightness(125%);
-    opacity: 1;
+    filter: brightness(75%);
+    opacity: 0.5;
 }
 
 .red { background-color: red; }
